@@ -1,0 +1,27 @@
+{
+	"default": {
+		"prefix": [
+			"lowest_prime"
+		],
+	"body": [
+
+		"vector<ll>low_prime(siz2,0);",
+	"void lowest_prime()",
+		"{",
+		"low_prime[1]=1;",
+			"rep(i,2,1010,1)",
+		"{",
+				"if(low_prime[i]==0)",
+				"{",
+				"low_prime[i]=i;",
+					"rep(j,i*i,siz2,i)",
+					"{",
+						"if(low_prime[j]==0)",
+						 " low_prime[j]=i;",
+					"}",
+			"}",
+			"}",
+		"}",
+	],
+	}
+}
